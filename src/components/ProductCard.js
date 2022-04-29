@@ -7,10 +7,10 @@ class ProductCard extends Component{
         const { product } = this.props
 
         return (
-            <div className='mx-auto mb-20 bg-white h-fit shadow-xl shadow-gray-500 w-80 p-4 rounded'>
+            <div className='mx-auto mb-20 bg-white h-fit shadow-xl shadow-gray-400 hover:shadow-gray-500  w-80 p-4 rounded'>
                 
                 <img 
-                className="mx-auto rounded mb-4 shadow-xl max-h-48"
+                className="mx-auto rounded mb-4 shadow-xl h-40"
                 src={product.thumbnail} 
                 />
                 

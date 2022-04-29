@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import Catalogo from './components/Catalogo'
 import SearchBar from './components/SearchBar'
+import AppHeader from './components/AppHeader'
 
 class App extends Component {
 
@@ -12,20 +13,16 @@ class App extends Component {
     this.setState({
       products: value
     })
-    console.log(this.state)
   }
 
   render(){
-    console.log('renderizando app')
+    
     return (
       <div>
+        <AppHeader >FreeMarket CL</AppHeader>
         <SearchBar handleSearchBar={this.handleSearchBar} />
-
-        <div className='flex flex-wrap p-5 bg-neutral-200 min-h-screen'>
-          <Catalogo 
-            products={this.state.products}
-          />
-        </div>
+        <Catalogo products={this.state.products} />
+        
       </div>   
     )
   }

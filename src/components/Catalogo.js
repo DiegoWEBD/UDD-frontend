@@ -7,8 +7,9 @@ class Catalogo extends Component {
         const { products } = this.props
 
         return (
-            <div className="flex flex-wrap">
-                {products.map((product, index) => 
+            <div className="flex flex-wrap py-8 px-2 bg-neutral-200 min-h-screen">
+                {
+                products.map((product, index) => 
                     <ProductCard
                         key={index}
                         product={product}
