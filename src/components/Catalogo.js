@@ -8,9 +8,9 @@ class Catalogo extends Component {
 
         return (
             <div className="flex flex-wrap">
-                {products.map(product => 
+                {products.map((product, index) => 
                     <ProductCard
-                        key={product.title}
+                        key={index}
                         product={product}
                     />
                 )}
